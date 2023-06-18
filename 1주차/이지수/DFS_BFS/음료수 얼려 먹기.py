@@ -30,3 +30,28 @@ for i in range(n):
         if bfs(i, j) == True:
             result += 1
 print(result)
+
+# DFS 풀이
+# n, m = map(int, input().split())
+# arr = [list(map(int, input())) for _ in range(n)]
+#
+# def dfs(x, y):
+#     # 범위 밖이면 즉시 종료
+#     if x <= -1 or x >= n or y <= -1 or y >= m:
+#         return False
+#     if arr[x][y] == 0:
+#         arr[x][y] = 1 # 방문처리
+#         # 상 하 좌 우 위치 모두 재귀적으로 호출
+#         dfs(x-1, y)
+#         dfs(x, y-1)
+#         dfs(x+1, y)
+#         dfs(x, y+1)
+#         return True
+#     return False
+#
+# result = 0
+# for i in range(n):
+#     for j in range(m):
+#         if dfs(i, j) == True:
+#             result += 1
+# print(result)

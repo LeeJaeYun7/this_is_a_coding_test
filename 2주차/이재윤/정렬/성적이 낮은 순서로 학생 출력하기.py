@@ -7,6 +7,7 @@ for i in range(N):
     input_data = input().split()
     name = input_data[0]
     point = int(input_data[1])
+    // array.append((name,point))로 더해준다. 
     array.append((name, point))
 
 // 람다 함수를 활용해서 student[1]로 정렬해준다. 

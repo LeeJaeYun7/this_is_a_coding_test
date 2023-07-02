@@ -5,7 +5,6 @@ arr = list(map(int, input().split()))
 arr.sort()
 ans = 0 
 
-    
 pos = 0
 tmp = []
 

@@ -26,7 +26,7 @@ def solution2(n, x):
     return cnt
 
 def solution3(N, x):
-    x.sort(reverse=True)
+    x.sort()
     cnt = 0
     pnt = 0
     while pnt<N:
@@ -38,6 +38,6 @@ def solution3(N, x):
 def test_1():
     N = 20
     inp = [6, 4, 3, 3, 7, 8, 9, 6, 5, 4, 5, 7, 7, 5, 4, 3, 2, 4, 5, 6]
-    assert solution3(N, inp) == 4
+    assert solution3(N, inp) == 3
 
 test_1()

@@ -30,7 +30,6 @@ def solution(p):
         if not p:
             return answer
         u, v = divide(p)
-        print(u, v)
         if is_appropriate(u):
             p = v
             answer += u
@@ -47,9 +46,9 @@ def solution(p):
                         __u += "("
                         # TypeError: 'str' object does not support item assignment
             answer += "("
-            answer += __u
+            answer += solution(v)
             answer += ")"
-            answer += v
+            answer += __u
             break
 
     return answer

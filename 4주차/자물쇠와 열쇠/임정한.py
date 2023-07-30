@@ -24,7 +24,9 @@ def solution(key, lock):
                         if 0 in row:
                             is_valid = False
                             break
-
+                        if 2 in row:
+                            is_valid = False
+                            break
                     if is_valid:
                         return True
 
